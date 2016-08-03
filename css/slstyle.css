@@ -1,0 +1,287 @@
+#BgDiv{background-color:#e3e3e3; 
+position:fixed; 
+display:none;
+width:100%; height:1000px;
+opacity:0.8;
+filter: alpha(opacity=50);
+-moz-opacity: 0.5;
+margin:0 auto;
+}
+	#all
+	{margin:0 auto;
+	width:649px;	
+	}
+	#ji
+	{width:555px;
+	height:70px;
+	background-color:#f5f5f5;
+	border:2px solid gray;
+	font: 30px Î¢ÈíÑÅºÚ;
+	padding:45px;
+	}
+	#shou
+	{width:555px;
+	height:70px;
+	background-color:#f5f5f5;
+	border:2px solid gray;
+	font: 30px Î¢ÈíÑÅºÚ;
+	padding:45px;
+	margin-bottom:20px;
+	}
+	#name
+	{width:555px;
+	height:40px;
+	background-color:#f5f5f5;
+	border:2px solid gray;
+	font: 30px Î¢ÈíÑÅºÚ;
+	padding:20px 45px 20px 45px;
+	}
+	#weight
+	{width:228px;
+	height:80px;
+	background-color:#f5f5f5;
+	border:2px solid gray;
+	float:left;
+	font: 30px Î¢ÈíÑÅºÚ;
+	padding:20px 45px 20px 45px;
+	margin-bottom:20px;
+	}
+	#price
+	{width:233px;
+	height:80px;
+	background-color:#f5f5f5;
+	border:2px solid gray;
+	float:left;
+	font: 30px Î¢ÈíÑÅºÚ;
+	padding:20px 45px 20px 45px;
+	margin-bottom:20px;
+	}
+	#way
+	{width:555px;
+	height:40px;
+	background-color:#f5f5f5;
+	border:2px solid gray;
+	clear:left;
+	font: 30px Î¢ÈíÑÅºÚ;
+	padding:20px 45px 20px 45px;
+	margin-bottom:20px;
+	}
+	#pay
+	{width:228px;
+	height:110px;
+	background-color:#f5f5f5;
+	border:2px solid gray;
+	float:left;
+	font: 30px Î¢ÈíÑÅºÚ;
+	padding:20px 45px 20px 45px;
+	margin-bottom:20px;
+	}
+	#type
+	{width:233px;
+	height:110px;
+	background-color:#f5f5f5;
+	border:2px solid gray;
+	float:left;
+	font: 30px Î¢ÈíÑÅºÚ;
+	padding:20px 45px 20px 45px;
+	margin-bottom:20px;
+	}
+	#say
+	{width:445px;
+	height:88px;
+	background-color:#f5f5f5;
+	border:2px solid gray;
+	clear:left;
+	font: 20px Î¢ÈíÑÅºÚ;
+	padding:20px 100px 20px 100px;
+	margin-bottom:10px;
+	}
+	#foot
+	{width:649px;
+	height:119px;
+	background-color:gray;
+	clear:left;
+	position:fixed;
+	bottom:0;
+	opacity:0.9;
+	color:#ffffff;
+	}
+	#fare{
+	width:409px;
+	height:79px;
+	float:left;
+	padding:20px;
+	font: 25px Î¢ÈíÑÅºÚ;
+	}
+	#sumbit{
+	width:200px;
+	height:119px;
+	font: 30px Î¢ÈíÑÅºÚ;
+	background-color:#ff3333;
+	float:right;
+	opacity:1.0;
+	text-align:center;
+	line-height:119px;
+	}
+	#none
+	{width:645px;
+	height:119px;
+	}
+	a:link,a:visited,a:hover,a:active {
+	color:#000000;
+	text-decoration:none;}
+
+	#popname{
+	background-color:#ffffff;
+	position:fixed;
+	bottom:0;
+	display:none;
+	overflow:hidden;
+	padding:23px;
+	border:1px solid gray;
+	font: 28px Î¢ÈíÑÅºÚ;
+	margin:15px;
+	}
+	#popweight{
+	position:fixed;
+	background-color:#ffffff;
+	font:28px Î¢ÈíÑÅºÚ;
+	display:none;
+	overflow:hidden;
+	padding:23px;
+	border:1px solid gray;
+	margin:15px;
+	}
+	#popprice{
+	position:fixed;
+	background-color:#ffffff;
+	font:18px Î¢ÈíÑÅºÚ;
+	display:none;
+	overflow:hidden;
+	padding:23px;
+	border:1px solid gray;
+	margin:15px;
+	color:#787878	;
+	}
+	#poppay{
+	position:fixed;
+	background-color:#ffffff;
+	font:28px Î¢ÈíÑÅºÚ;
+	display:none;
+	overflow:hidden;
+	padding:23px;
+	margin:15px;
+	border:1px solid gray;
+	}
+	#poptype{
+	position:fixed;
+	background-color:#ffffff;
+	font:28px Î¢ÈíÑÅºÚ;
+	display:none;
+	overflow:hidden;
+	padding:23px;
+	margin:15px;
+	border:1px solid white;
+	}
+	#popsay{
+	position:fixed;
+	background-color:#ffffff;
+	font:28px Î¢ÈíÑÅºÚ;
+	display:none;
+	overflow:hidden;
+	padding:23px;
+	margin:15px;
+	border:1px solid white;
+	}
+	#PopReservation
+	{
+	position:fixed;
+	background-color:#ffffff;
+	font:28px Î¢ÈíÑÅºÚ;
+	display:none;
+	overflow:hidden;
+	padding:23px;
+	margin:15px;
+	border:1px solid white;
+	}
+	#xz{
+	width:170px;
+	height:42px;
+	line-height:42px;
+	padding:5px;
+	font:28px Î¢ÈíÑÅºÚ;
+	background-color:#d0d0d0;
+	text-align:center;
+	text-valign:center;
+	float:left;
+	margin:5px;
+	}
+	#other{
+display:none;	}
+	#xz2
+	{
+	width:240px;
+	height:42px;
+	padding:5px;
+	line-height:42px;
+	font:28px Î¢ÈíÑÅºÚ;
+	background-color:#d0d0d0;
+	text-align:center;
+	text-valign:center;
+	float:left;
+	margin:5px;
+	}
+	#time
+	{
+	width:260px;
+	height:50px;
+	padding:5px;
+	line-height:50px;
+	font:28px Î¢ÈíÑÅºÚ;
+	background-color:white;
+	text-align:center;
+	text-valign:center;
+	float:left;
+	margin:5px;
+	}
+	#tomorrow
+	{
+	width:170px;
+	height:55px;
+	padding:5px;
+	text-height:48px;
+	font:28px Î¢ÈíÑÅºÚ;
+	background-color:#d9d9d9;
+	text-align:center;
+	text-valign:center;
+	float:left;
+	margin:5px;
+	}
+	#Atomorrow
+	{
+	width:170px;
+	height:55px;
+	padding:5px;
+	text-height:48px;
+	font:28px Î¢ÈíÑÅºÚ;
+	background-color:#d9d9d9;
+	text-align:center;
+	text-valign:center;
+	float:left;
+	margin:5px;
+	}
+	#Time{
+	background-color:#d2d2d2;
+	overflow-y:scroll; 
+	width:600px;
+	height:250px;
+	padding:10px;
+	}
+	#cancel{
+	width:570px;
+	height:60px;
+	background-color:#0099ff;
+	color:white;
+	line-height:60px;
+	text-alingn:center;
+	}

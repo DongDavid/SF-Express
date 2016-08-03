@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="吴纯玲">
+  <meta name="Keywords" content="顺丰">
+  <meta name="Description" content="寄件">
+  <link rel="stylesheet" type=css href="css/slstyle.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>顺丰速运</title>
+ </head>
+ <script src="js/index.js"></script>
+ <body>
+	<div id="BgDiv"></div>
+
+	<div id="all">
+<!-- 寄件人地址 -->
+		<a href="send.html">
+			<div id="ji" >
+				<span style='float:left'><img src="images/寄.png" width="66" height="66"alt="" align="center">&nbsp;&nbsp;&nbsp;请选择寄件人详细地址</span>
+				<span style='float:right ' ><font color="gray">&gt;</font></span>
+			</div>
+		</a>
+
+<!-- 收件人地址 -->
+		<a href="receive.html">
+			<div id="shou">
+				<span style='float:left'><img src="images/收.png" width="66" height="66"alt=""align="center">&nbsp;&nbsp;&nbsp;请选择收件人详细地址</span>
+				<span style='float:right ' ><font color="gray">&gt;</font></span>
+			</div>
+		 </a>
+	
+<!-- 物品名称 -->
+		<div id="name">
+			<span style='float:left'>物品名称</span>
+			<span style='float:right ' >
+				<font color="gray">
+					<input type="text" id="val" value="文件" onclick="showPopup('popname',600,210)"style="width:300px;height:40px;font:25px 微软雅黑;color:gray;border:none;text-align:right;"/>&gt;
+				</font>
+			</span>
+		</div>
+	
+<!-- 物品重量 -->
+		<div id="weight">
+			<span style='float:left'>物品重量</span>
+			<span style='float:left ' >
+				<font color="gray">
+					<input type="text" id="val2" value="1kg" onclick="showPopup('popweight',600,230)" style="width:198px; height:50px;font:25px 微软雅黑;color:gray;border:none;align:left;text-align:left;"/>&gt;
+				</font>
+			</span>
+		</div>
+
+<!-- 保价 -->	
+		<div id="price">
+			<span style='float:left'>保价</span>
+			<span style='float:left ' >
+				<font color="gray">
+					<input type="text" id="val3" value="选填" onclick="showPopup('popprice',600,230)" style="width:203px; height:50px;font:25px 微软雅黑;color:gray;border:none;text-align:left;"/>&gt;
+				</font>
+			</span>
+		</div>
+	
+<!-- 寄件方式 -->
+		<div id="way">
+			<span style='float:left'>寄件方式</span>
+			<span style='float:right ' ><font color="gray">快递员上门收件&gt;</font></span>
+		</div>
+	
+<!-- 付款方式 -->
+		<div id="pay">
+			<span style='float:left'>付款方式</span>
+			<span style='float:left ' >
+				<font color="gray">
+					<input type="text" id="val4" value="寄件人付" onclick="showPopup('poppay',600,180)" style="width:210px; height:50px;font:25px 微软雅黑;color:gray;border:none;text-align:left;"/>&gt;
+				</font>
+			</span>
+		</div>
+
+<!-- 产品类型 -->
+		<div id="type">
+			<span style='float:left'>产品类型</span>
+			<span style='float:left ' >
+				<font color="gray">
+					<input type="text" id="val5" value="顺丰标快" onclick="showPopup('poptype',600,300)" style="width:210px; height:50px;font:25px 微软雅黑;color:gray;border:none;text-align:left;"/>&gt;
+				</font>
+			</span>
+		</div>
+	
+<!-- 对快递员说 与 预约寄件-->
+		<div id="say" >
+			<span onclick="showPopup('popsay',600,410)"style='float:left'>&nbsp;&nbsp;&nbsp;<img src="images/头像.png" width="60" height="59" border="0" alt=""><br>对快递员说</span>
+			<span onclick="showPopup('PopReservation',600,510)"style='float:right '>&nbsp;<img src="images/预约.png" width="60" height="59" border="0" alt=""><br>预约寄件</span>
+		</div>
+
+ 
+		<div id="none"></div>
+
+<!-- 提交版块 -->
+		<div id="foot" >
+
+			<div id="fare">
+				费用估算：元&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;仅供参考</font><br>
+				<img id="button"src="images/yes.png" width="28" height="28" align="center"border="0" alt="" onclick="change()">&nbsp;&nbsp;我同意《快件运单契约条款》
+			</div>
+			<div id="sumbit">
+				提交
+			</div>
+		</div>
+
+</div>
+<!-- 弹出选择div -->
+
+<!-- 物品名称选择 -->
+		<div id="popname">
+			<input type="image" src="images/cha.png" onclick="hidePopup('popname','other')"> 
+			<br>
+			<div id="xz" onclick="selectvalue('popname','other','val','文件')">文件</div>
+			<div id="xz"onclick="selectvalue('popname','other','val','数码产品')">数码产品</div>
+			<div id="xz"onclick="selectvalue('popname','other','val','生活用品')">生活用品</div>
+			<div id="xz"onclick="selectvalue('popname','other','val','服饰')">服饰</div>
+			<div id="xz"onclick="selectvalue('popname','other','val','食品')">食品</div>
+			<div id="xz"onclick="pop('other')">填其他</div>
+			<div id="other" >
+				<input type="text" id="qita" value="告诉我们你寄的是什么？"style="width:450px; height:50px;font:25px 微软雅黑;color:gray;border:1px gray solid;"onfocus="javascript:if(this.value=='告诉我们你寄的是什么？')this.value='';">
+				<input type="button" value="确定" style="width:100px; height:53px;font:25px 微软雅黑;color:blue;border:1px gray solid;"onclick="selectvalue('popname','other','val',qita.value)">
+			</div>
+		</div>
+
+<!-- 物品重量选择 -->
+		<div id="popweight">
+			<input type="image" src="images/cha.png" onclick="hidePopup('popweight','other2')"> 
+			<br>物品重量<br>
+			<div id="xz" onclick="selectvalue('popweight','other2','val2','1kg')">1kg</div>
+			<div id="xz"onclick="selectvalue('popweight','other2','val2','1.5kg')">1.5kg</div>
+			<div id="xz"onclick="selectvalue('popweight','other2','val2','2kg')">2kg</div>
+			<div id="xz"onclick="selectvalue('popweight','other2','val2','2.5kg')">2.5kg</div>
+			<div id="xz"onclick="selectvalue('popweight','other2','val2','3kg')">3kg</div>
+			<div id="xz"onclick="pop('other2')">填其他</div>
+			<div id="other2"style="display:none" >
+				<input type="text" id="w" value="告诉我们您的物品重量是？kg"style="width:450px; height:50px;font:25px 微软雅黑;color:gray;border:1px gray solid;"onfocus="javascript:if(this.value=='告诉我们您的物品重量是？kg')this.value='';">
+				<input type="button" value="确定" style="width:100px; height:53px;font:25px 微软雅黑;color:blue;border:1px gray solid;"onclick="selectvalue('popweight','other2','val2',w.value+'kg')">
+			</div>
+		</div>
+
+<!-- 保价选择 -->
+		<div id="popprice">
+			<input type="image" src="images/cha.png" onclick="hidePopup('popprice','')"> 
+			<br>	<br>
+			<input type="text" id="p" value="请填写您的物品实际价值"style="width:480px; height:50px;font:25px 微软雅黑;color:gray;border:1px gray solid;"onfocus="javascript:if(this.value=='请填写您的物品实际价值')this.value='';">
+			<input type="button" value="确定" style="width:90px; height:53px;font:25px 微软雅黑;color:blue;border:1px gray solid;"onclick="selectvalue('popprice','','val3',p.value+'元')">
+			<br><br>
+			预计收取费用0元<hr>
+			温馨提示：<br>1.预估收取费用仅供参考，请以收派员收取为准<br>2.物品价值不能&gt;100万元，如需寄价值&gt;100万元的物品，请拨打客服热线95338！
+		</div>
+
+<!-- 付款方式选择 -->
+		<div id="poppay">
+			<input type="image" src="images/cha.png" onclick="hidePopup('poppay','other4')"> 
+			<br>
+			<div id="xz" onclick="selectvalue('poppay','other4','val4','寄件人付')">寄件人付</div>
+			<div id="xz"onclick="selectvalue('poppay','other4','val4','收件人付')">收件人付</div>
+			<div id="xz"onclick="pop('other4')">寄付月结</div>	
+			<div id="other4" style="display:none" >
+				<input type="text" id="fu" value="请输入月结卡号"style="width:480px; height:50px;font:25px 微软雅黑;color:gray;border:1px gray solid;"onfocus="javascript:if(this.value=='请输入月结卡号')this.value='';">
+				<input type="button" value="确定" style="width:90px; height:53px;font:25px 微软雅黑;color:blue;border:1px gray solid;"onclick="selectvalue('poppay','other4','val4','寄付月结')">
+			</div>
+		</div>
+
+<!-- 产品类型选择 -->
+		<div id="poptype"style="visibility:">
+			<input type="image" src="images/cha.png" onclick="hidePopup('poptype','')"> 
+			<br>
+			<div id="xz"style="width:500px;height:50px;text-height:10px;" onclick="selectvalue('poptype','','val5','顺丰标快')">顺丰标快</div>
+			<div id="xz"style="width:500px;height:50px;text-height:10px;">顺丰特惠<font size="1" color=""><br>尚未开通，敬请期待</font></div>
+			<div id="xz"style="width:500px;height:50px;text-height:10px;">顺丰次晨<font size="1" color=""><br>尚未开通，敬请期待</font></div>
+			<div id="xz"style="width:500px;height:50px;text-height:10px;">顺丰即日<font size="1" color=""><br>尚未开通，敬请期待</font></div>	
+		</div>
+
+<!-- 对快递员说 -->
+		<div id="popsay">
+			<span class=""style="float:left"><input type="image" src="images/cha.png" onclick="hidePopup('popsay','')"> </span>
+			<span class=""style="float:right"onclick="hidePopup('popsay','')"><font size="" color="#0099ff">确定</font></span>
+			<br>
+			<textarea name="s" id="psay"value="请您选择下面内容或输入其他内容。。。"onfocus="javascript:if(this.value=='请您选择下面内容或输入其他内容。。。')this.value=''";rows="2" cols=""style="width:500px; height:100px;font:25px 微软雅黑;color:gray;border:1px gray solid;">请您选择下面内容或输入其他内容。。。</textarea><br>
+			<font size="4" color="gray">根据您的需要选择内容</font><br>
+			<div id="xz2" onclick="SelSay('要爬楼；')">要爬楼
+				
+			</div>
+			<div id="xz2" onclick="SelSay('上门前请联系；')">上门前请联系	</div>
+			<div id="xz2" onclick="SelSay('带纸箱大号；')">带纸箱大号		</div>
+			<div id="xz2" onclick="SelSay('带纸箱中号；')">带纸箱中号		</div>
+			<div id="xz2" onclick="SelSay('带纸箱小号；')">带纸箱小号		</div>
+			<div id="xz2" onclick="SelSay('缺文件封；')">缺文件封			</div>
+			<div id="xz2" onclick="SelSay('缺文件袋；')">缺文件袋			</div>
+		</div>
+
+
+<!-- 预约 -->
+		<div id="PopReservation">
+			<span class=""style="float:left"><input type="image" src="images/cha.png" onclick="hidePopup('PopReservation','')"> </span>
+			<span class=""style="float:right"onclick="hidePopup('PopReservation','')"><font size="" color="#0099ff">确定</font></span>
+			<br>
+			<div id="tomorrow"onclick="ChColor('tomorrow','Atomorrow')">明天<br>
+				<script type="text/javascript">
+				today = new Date();  
+				var date;
+				var centry ;   
+				centry="";
+				if  (today.getFullYear()<2000 )  
+				centry = "19" ; 
+				date1 = centry + (today.getFullYear())  + "-" + (today.getMonth() + 1 ) + "-" + (today.getDate()+1) + "" ; 
+				date2 = "";
+				document.write( date1+date2);
+				</script>
+			</div>
+			<div id="Atomorrow"onclick="ChColor('Atomorrow','tomorrow')">后天<br>
+				<script type="text/javascript">
+				today = new Date();  
+				var date;
+				var centry ;   
+				centry="";
+				if  (today.getFullYear()<2000 )  
+				centry = "19" ; 
+				date1 = centry + (today.getFullYear())  + "-" + (today.getMonth() + 1 ) + "-" + (today.getDate()+2) + "" ; 
+				date2 = "";
+				document.write( date1+date2);
+			</script>
+			</div>
+			<br><br><br>
+
+			<div id="Time">
+				<div id="time">09:00</div>
+				<div id="time">09:30</div>
+				<div id="time">10:00</div>
+				<div id="time">10:30</div>
+				<div id="time">11:00</div>
+				<div id="time">11:30</div>
+				<div id="time">12:00</div>
+				<div id="time">12:30</div>
+				<div id="time">13:00</div>
+				<div id="time">13:30</div>
+				<div id="time">14:00</div>
+				<div id="time">14:30</div>
+				<div id="time">15:00</div>
+				<div id="time">15:30</div>
+				<div id="time">16:00</div>
+				<div id="time">16:30</div>
+				<div id="time">17:00</div>
+				<div id="time">17:30</div>
+			</div><br>
+			<div id="cancel"onclick="hidePopup('PopReservation','')"><center>取消预约</center></div>
+		</div>
+	
+	
+	
+
+	
+ </body>
+</html>

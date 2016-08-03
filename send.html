@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>寄件人地址</title>
+ </head>
+ <style>
+	#table{
+	font: 25px 微软雅黑;
+	valign:top;
+	}
+	#cancel a:link,a:visited,a:hover,a:active {
+	color:#0099ff;
+	 text-decoration:none;}
+ </style>
+ <script>
+ function change()
+	{
+		element = document.getElementById("button");
+		if (element.src.match("yes"))
+		{
+			element.src="images/no.png";
+		}
+		else
+		{
+			element.src="images/yes.png";
+		}
+	}
+</script>
+ <body>
+	
+	<table id="table" width="643" height="500" align="center" border="1"  border color="gray" cellpadding="15 20 15 20" rules=rows border frame=hsides>
+		<tr>
+			<td>
+				<font color="#0099ff">
+					<span style='float:left'><a id="cancel" href="index.html">取消</a></span>
+				</font>
+			</td>
+			<td></td>
+			<td>
+				<span style='float:right ' ><font color="gray">保存</font></span>
+			</td>
+		</tr>
+
+		<tr>
+			<td>姓名</td>
+			<td>
+				<input type="text" name="name"value="请填写真实姓名" onfocus="javascript:if(this.value=='请填写真实姓名')this.value='';"style="width:300px; height:40px;font:25px 微软雅黑;color:gray;border:none;">
+			</td>	
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>手机号码</td>
+			<td>
+				<input type="text" name="phone" value="输入手机号或电话号码"onfocus="javascript:if(this.value=='输入手机号或电话号码')this.value='';"style="width:300px; height:40px;font:25px 微软雅黑;color:gray;border:none;">
+			</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>选择城市</td>
+			<td>
+				<input type="text" name="city" value="请选择省市区"onfocus="javascript:if(this.value=='请选择省市区')this.value='';else if(this.value=='')this.value=='请详细到门牌号';"style="width:300px; height:40px;font:25px 微软雅黑;color:gray;border:none;">
+			</td>
+			<td>
+				<span style='float:right ' ><img src="images/定位.png" width="32" height="40" border="0" alt=""></span>
+			</td>
+		</tr>
+
+		<tr >
+			<td  style='valign:top'>详细地址</td>
+			<td>
+				<textarea name="address" value="请详细到门牌号"onfocus="javascript:if(this.value=='请详细到门牌号')this.value='';else if(this.value=='')this.value=='请详细到门牌号';"rows="2" cols=""style="width:300px; height:80px;font:25px 微软雅黑;color:gray;border:none;">请详细到门牌号</textarea>
+			</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td colspan="3"><font size="5" color="#0099ff"><center>地址粘贴板&nbsp;v</center></font></td>
+		</tr>
+
+		<tr>
+			<td colspan="3">
+				<img id="button"src="images/no.png" width="28" height="29" border="0" align="center"alt=""onclick="change()">&nbsp;&nbsp;<font size="5" >设为默认寄件人地址</font>
+			</td>
+		</tr>
+
+	</table>	
+ </body>
+</html>
